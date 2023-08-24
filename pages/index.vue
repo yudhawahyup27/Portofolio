@@ -7,16 +7,16 @@ definePageMeta({
 <template>
   <div>
     <!-- Hero Slide -->
-    <div  id="hero" class="hero grid  grid-cols-3 flex flex-wrap p-2  shadow shadow-md  place-items-center">
- <div class="text1  ">
-<h1 class="text-indigo-500 font-bold text-center md:text-left my-2 md:text-xl">Mobile Developer</h1>
-<span class="text-xs text-justify  hidden md:block">Seorang programmer junior mobile developer yang mahir dalam Flutter dan Kotlin, berfokus pada pembuatan aplikasi lintas platform dan Android. Saya berdedikasi dalam mempelajari dan mengimplementasikan solusi kreatif dalam pengembangan aplikasi. </span>
+    <div  id="hero" class="hero grid bg-[#0f172a]  grid-cols-3 flex flex-wrap p-2  shadow shadow-sm  place-items-center">
+ <div class="text1  md:mx-10 ">
+<h1 class="text-white md:text-indigo-500 z-10 font-bold text-center md:text-left my-2 md:text-xl">Mobile Developer</h1>
+<span class="text-xs text-justify text-white  hidden md:block ">Seorang programmer junior mobile developer yang mahir dalam Flutter dan Kotlin, berfokus pada pembuatan aplikasi lintas platform dan Android. Saya berdedikasi dalam mempelajari dan mengimplementasikan solusi kreatif dalam pengembangan aplikasi. </span>
  </div>
- <div class="gambar">
-  <img class="w-120 " src="../public/heroimg.png" alt=""></div>
- <div class=" ">
+ <div class="z-0 gambar">
+  </div>
+ <div class="md:mx-10 ">
    <h1 class="text-indigo-500 font-bold  text-center md:text-left my-2 md:text-xl">Front End Developer</h1>
-   <span class="text-xs text-justify hidden md:block">
+   <span class="text-xs text-white  text-justify hidden md:block">
   Seorang programmer junior frontend developer yang menguasai bahasa Vue/Nuxt, React, Bootstrap, Tailwind, Svelte, Angular, dan Ember. Berdedikasi untuk menciptakan antarmuka menarik dan siap belajar lebih dalam untuk pengembangan tampilan web yang dinamis.</span>
   </div>
   <!-- Mobile -->
@@ -31,9 +31,44 @@ definePageMeta({
      </div>
   </div> -->
 </div>
+<!-- Service -->
+<div class="text-center  bg-[#0f172a]  py-2  text-white">
+  <h1 class="text-indigo-500  font-bold text-2xl">Services</h1>
+<span>,dkfmafkafmadfmlafmadfmladmfamfla</span>
+<!-- <hr class="border-white border-1 mx-96"> -->
+</div>
+<div class="grid grid-cols-2 py-6 bg-[#0f172a] text-white">
+<div class="">
+  <img class="w-72 h-72 md:w-80 md:h-80 mx-auto" src="../public/web-development.png"/>
+</div>
+<div class="mx-1 ">
+<h1 class="text-indigo-500  font-bold text-lg">Frontend <span class="text-white">Developer</span></h1>
+<p class="text-sm my-2">Seorang programmer junior frontend developer yang menguasai bahasa Vue/Nuxt, React, Bootstrap, Tailwind, Svelte, Angular, dan Ember. Berdedikasi untuk menciptakan antarmuka menarik dan siap belajar lebih dalam untuk pengembangan tampilan web yang dinamis.</p>
+</div>
+</div>
+<div class="grid grid-cols-2  py-6  bg-[#0f172a] text-white">
+  <div class="mx-2">
+  <h1 class="text-indigo-500  font-bold text-lg">Mobile Developer</h1>
+  <p class="text-sm my-2">Seorang programmer junior frontend developer yang menguasai bahasa Vue/Nuxt, React, Bootstrap, Tailwind, Svelte, Angular, dan Ember. Berdedikasi untuk menciptakan antarmuka menarik dan siap belajar lebih dalam untuk pengembangan tampilan web yang dinamis.</p>
+  </div>
+<div>
+  <img class="w-72 h-72 md:w-80 md:h-80 mx-auto" src="../public/mobile-app.png"/>
+</div>
+
+</div>
   </div>
 </template>
 
 <style>
+.gambar {
+  width: 384px;
+  height: 384px;
+  background-image: url("../public/heroimg.png");
+  background-size: cover;
+  transition: background-image 0.3s ease-in-out;
+}
 
+.gambar:hover {
+  background-image: url("../public/foto.png");
+}
 </style>

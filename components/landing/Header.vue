@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="text-white bg-indigo-500 p-4 shadow">
+    <nav class="text-white  bg-[#0f172a]  p-4 shadow">
           <div class="container mx-auto flex justify-between items-center">
               <div class="text-xl font-semibold">Yudha Wahyu Pratama</div>
               <ul class="space-x-4 d-flex flex text-white">
