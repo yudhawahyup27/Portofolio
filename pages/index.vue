@@ -1,3 +1,9 @@
+
+<script >
+definePageMeta({
+  layout: "landing",
+});
+</script>
 <template>
   <div>
     <!-- Hero Slide -->
@@ -27,14 +33,6 @@
 </div>
   </div>
 </template>
-
-<script>
-export default {
-  layout: 'landing'
-
-}
-
-</script>
 
 <style>
 
