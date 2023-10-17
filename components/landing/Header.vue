@@ -1,25 +1,71 @@
 <template>
   <div>
-    <nav class="text-white  bg-[#0f172a]  p-4 shadow">
-          <div class="container mx-auto flex justify-between items-center">
-              <div class="text-xl font-semibold">Yudha Wahyu Pratama</div>
-              <ul class="space-x-4 d-flex flex text-white">
-                  <li><a href="#" class=" text-white hover:text-gray-300">Home</a></li>
-                  <li><a href="#" class="hover:text-gray-300">About</a></li>
-                  <li><a href="#" class="hover:text-gray-300">Services</a></li>
-                  <li><a href="#" class="hover:text-gray-300">Contact</a></li>
-              </ul>
-          </div>
+    <header>
+      <nav class="
+          flex flex-wrap
+          items-center
+          justify-between
+          w-full
+          py-4
+          md:py-0
+          px-4
+          text-lg 
+          bg-[#0f172a] 
+          text-white
+        ">
+        <div>
+          <a href="#">
+            Portofolio
+          </a>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" @click="toggleMenu"
+          class="h-6 w-6 cursor-pointer md:hidden block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+
+        <div v-bind:class="{ 'hidden': isMenuHidden, 'w-full md:flex md:items-center md:w-auto': true }" id="menu">
+          <ul class="
+              pt-4
+              text-base text-white
+              md:flex
+              md:justify-between 
+              md:pt-0">
+            <li>
+              <a class="md:p-4 py-2 block hover:text-purple-400" href="#">Portofolio</a>
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-purple-400" href="#">Pricing</a>
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-purple-400" href="#">Kontak</a>
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-purple-400" href="https://www.mastama.my.id">Blog</a>
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-purple-400 text-purple-500" href="#">Sign Up</a>
+            </li>
+          </ul>
+        </div>
       </nav>
+    </header>
   </div>
 </template>
 
 <script>
 export default {
-
-}
+  data() {
+    return {
+      isMenuHidden: true,
+    };
+  },
+  methods: {
+    toggleMenu() {
+      this.isMenuHidden = !this.isMenuHidden;
+    },
+  },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>
