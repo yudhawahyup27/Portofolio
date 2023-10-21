@@ -2,7 +2,14 @@
 <script >
 definePageMeta({
   layout: "landing",
+
 });
+import Slider from '~/components/partial/slider.vue';
+export default {
+  components: {
+    Slider
+  }
+}
 </script>
 <template>
   <div>
@@ -90,6 +97,11 @@ definePageMeta({
         </div>
       </div>
     </div>
+    <!-- Slider Portofolio -->
+    <div class="bg-[#0f172a] ">
+      <h4 class="text-base text-white text-center  p-2">Portofolio</h4>
+      <Slider/>
+    </div>
   </div>
 </template>
 
@@ -104,4 +116,5 @@ definePageMeta({
 
 .gambar:hover {
   background-image: url("../src/assets/Img/foto.png");
-}</style>
+}
+</style>
