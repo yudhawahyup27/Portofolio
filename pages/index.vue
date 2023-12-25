@@ -170,7 +170,7 @@
         </p>
       </div>
               <div class="d-flex justify-content-between md:hidden block">
-            <button
+            <button 
               class="bg-blue-400 hover:bg-blue-500 text-white  font-bold py-2 px-5 rounded inline-flex items-center mt-2 mr-2">
               <svg class=" w-5 h-5 mx-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                 stroke="#ffffff">
@@ -475,7 +475,7 @@
                 </g>
               </svg>
               <span class="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 
-    -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">Kotlin</span>
+    -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">Cypress</span>
             </div>
           </div>
         </div>
