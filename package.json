@@ -12,9 +12,11 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "^6.10.1",
     "@types/node": "^18.19.3",
-    "nuxt": "^3.8.2"
+    "nuxt": "^3.8.2",
+    "nuxt-primevue": "^0.2.2"
   },
   "dependencies": {
+    "gsap": "^3.12.4",
     "vue3-carousel": "^0.3.1"
   }
 }
