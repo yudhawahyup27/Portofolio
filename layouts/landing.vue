@@ -4,18 +4,18 @@
     <main>
       <Nuxt />
     </main>
-     <slot />
+    <slot />
   </div>
 </template>
 
 <script>
-import LandingHeader from '~/components/landing/Header.vue'
+import LandingHeader from "~/components/landing/header.vue";
 export default {
-  name: 'LayoutLanding',
+  name: "LayoutLanding",
   components: {
-    LandingHeader
-  }
-}
+    LandingHeader,
+  },
+};
 </script>
 
 <style></style>

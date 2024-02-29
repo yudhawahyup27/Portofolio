@@ -1,0 +1,29 @@
+{
+    "data": {
+        "tentang-saya": "Tentang Saya",
+        "keterangan": "Namaku Yudha. Saya berhasil lulus sebagai Diploma Manajemen Informatika Politeknik Negeri Malang. Pengembang Fullstack terampil dengan 2+ tahun di FrontEnd dan QA Automatic. Saya selalu bersedia mempelajari teknologi baru dalam pengembangan full stack, untuk memberikan solusi pengembangan perangkat lunak yang inovatif dan efisien. Saya berkomitmen untuk terus meningkatkan keterampilan dan pengetahuan saya, untuk memberikan hasil terbaik dalam pengembangan perangkat lunak.",
+        "Pendidikan": "Pendidikan",
+        "pendidikan": [
+            {
+                "institusi": "Politeknik Negeri Malang",
+                "jurusan": "Manajemen Informatika (D3)",
+                "score": "3.69",
+                "tahun": "2020-2023"
+            },
+            {
+                "institusi": "SMA Negeri 6 Kediri",
+                "jurusan": "IPS",
+                "tahun": "2017-2020"
+            }
+        ],
+        "Kerja": "Pengalaman Kerja",
+        "pengalaman-kerja": [
+            {
+                "Kantor": "PT Biotek Teknologi",
+                "posisi": "FrontEnd Developer Dan QA Automatic",
+                "mulai": "Januari 2020",
+                "selesai": "Sekarang"
+            }
+        ]
+    }
+}

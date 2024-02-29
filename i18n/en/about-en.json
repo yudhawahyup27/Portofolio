@@ -1,0 +1,29 @@
+{
+    "data": {
+        "tentang-saya": "Tentang Saya",
+        "keterangan": "My name is Yudha. I successfully graduated as Diploma of Informatic Management, State Polytechnic of Malang. A skilled Fullstack developer with 2+ years in FrontEnd dan QA Automatic . I am always willing to learn new technologies in full stack development, to provide innovative and efficient software development solutions. I am committed to continuously improving my skills and knowledge, to provide the best results in software development.",
+        "Pendidikan": "Pendidikan",
+        "pendidikan": [
+            {
+                "institusi": "Politeknik Negeri Malang",
+                "jurusan": "Manajemen Informatika (D3)",
+                "score": "3.69",
+                "tahun": "2020-2023"
+            },
+            {
+                "institusi": "SMA Negeri 6 Kediri",
+                "jurusan": "IPS",
+                "tahun": "2017-2020"
+            }
+        ],
+        "Kerja": "Pengalaman Kerja",
+        "pengalaman-kerja": [
+            {
+                "Kantor": "PT Biotek Teknologi",
+                "posisi": "FrontEnd Developer Dan QA Automatic",
+                "mulai": "Januari 2020",
+                "selesai": "Sekarang"
+            }
+        ]
+    }
+}
