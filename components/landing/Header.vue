@@ -40,7 +40,7 @@
                 v-on:click="toggleModal()"
                 class="md:p-4 py-2 block hover:text-purple-400"
                 href="#"
-                >Bahasa</a
+                >Language</a
               >
             </li>
             <li>
