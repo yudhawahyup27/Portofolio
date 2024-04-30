@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import LandingHeader from "~/components/landing/header.vue";
+import LandingHeader from "~/components/landing/Header.vue";
 export default {
   name: "LayoutLanding",
   components: {

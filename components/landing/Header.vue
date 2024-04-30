@@ -37,7 +37,7 @@
           >
             <li>
               <a
-                v-on:click="toggleModal()"
+                
                 class="md:p-4 py-2 block hover:text-purple-400"
                 href="#"
                 >Language</a
@@ -77,7 +77,6 @@
 </template>
 
 <script lang="ts">
-import ModalChangelanguage from "../partial/ModalChangelanguage.vue";
 
 export default {
   data() {
@@ -86,15 +85,13 @@ export default {
     };
   },
   components: {
-    ModalChangelanguage,
+   
   },
   methods: {
     toggleMenu() {
       this.isMenuHidden = !this.isMenuHidden;
     },
-    toggleModal() {
-      this.$refs.languageModal.toggleModal();
-    },
+  
   },
 };
 </script>
