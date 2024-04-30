@@ -123,7 +123,7 @@
           </nuxt-link>
         </div>
       </div>
-      <div class="z-0 gambar"></div>
+      <img :src="gambarList[gambarIndex]" alt="Gambar" width="300" height="300"/>
       <div class="text1 md:mx-10">
         <h1 class="md:hidden block text-indigo-500 z-10 font-bold text-center md:text-left  md:text-2xl">
           Frontend <span class="text-white">Developer</span>
@@ -290,7 +290,7 @@
         <span class="bg-primary  pr-4 text-3xl text-white">Teknologi</span>
       </div>
       <span class="mt-4 text-white">I work with the following technologies and tools:</span>
-      <div class="grid grid-col-1 md:grid-cols-3  gap-1  my-2  p-4">
+      <div class="grid grid-col-1 md:grid-cols-3  gap-4 text-center my-4  p-4">
         <!-- Mobile Dev -->
         <div>
           <h3 class="text-white  font-extrabold text-xl my-3 ">Mobile</h3>
@@ -504,6 +504,11 @@ export default {
       mobile: "Mobile",
       web: "Frontend",
       showText: 1,
+      gambarIndex: 0,
+      gambarList: [
+        '/_nuxt/src/assets/Img/heroimg.png',
+        "/_nuxt/src/assets/Img/foto.png"
+      ]
     };
   },
   components: {
@@ -512,21 +517,16 @@ export default {
   mounted() {
     setInterval(() => {
       this.showText = this.showText === 1 ? 2 : 1;
+      this.gambarIndex = (this.gambarIndex + 1) % this.gambarList.length;
     }, 5000);
   },
 }
 </script>
 
 <style scoped>
-.gambar {
-  width: 384px;
-  height: 384px;
-  background-image: url("../src/assets/Img/heroimg.png");
-  background-size: cover;
-  transition: background-image 0.3s ease-in-out;
-}
 
-.gambar:hover {
-  background-image: url("../src/assets/Img/foto.png");
+img{
+  object-fit: contain;
+  max-height: 300px;
 }
 </style>
