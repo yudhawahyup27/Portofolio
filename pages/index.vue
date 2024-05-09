@@ -57,11 +57,13 @@
           <nuxt-link to="https://mastama.my.id"> </nuxt-link>
         </div>
       </div>
+
       <img
+        class="w-100 object-cover object-center"
         :src="gambarList[gambarIndex]"
         alt="Gambar"
         width="300"
-        height="300"
+        height="400"
       />
       <div class="text1 md:mx-10">
         <h1
@@ -315,8 +317,8 @@ export default {
       showText: 1,
       gambarIndex: 0,
       gambarList: [
-        "/_nuxt/src/assets/Img/heroimg.png",
-        "/_nuxt/src/assets/Img/foto.png",
+        "https://iili.io/J41fVoP.png",
+        "https://iili.io/J41KHQ9.png",
       ],
     };
   },
@@ -331,10 +333,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-img {
-  object-fit: contain;
-  max-height: 300px;
-}
-</style>
