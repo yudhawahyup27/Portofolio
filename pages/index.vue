@@ -75,10 +75,22 @@
           class="hidden md:flex md:flex-wrap text-indigo-500 z-10 font-bold md:text-left md:text-xl my-4"
         >
           <span v-if="showText === 1" class="mx-2 text-2xl">{{ mobile }} </span>
-          <h1 v-else class="mx-2 text-2xl">{{ web }}</h1>
-          <small class="text-white hidden md:block text-2xl animate-none"
-            >Developer</small
+          <span v-else-if="showText === 2" class="mx-2 text-2xl">{{
+            web
+          }}</span>
+          <span v-else class="mx-2 text-2xl">{{ qa }}</span>
+          <small
+            v-if="showText === 1 || showText === 2"
+            class="text-white md:block text-2xl animate-none"
           >
+            Developer
+          </small>
+          <small
+            v-if="showText === 3"
+            class="text-white md:block text-2xl animate-none"
+          >
+            Atomatic
+          </small>
         </div>
         <p class="text-xs text-justify text-white hidden md:block indent-8">
           My name is Yudha. I successfully graduated as Diploma of Informatic
@@ -314,6 +326,7 @@ export default {
     return {
       mobile: "Mobile",
       web: "Frontend",
+      qa: "Quality ",
       showText: 1,
       gambarIndex: 0,
       gambarList: [
@@ -327,7 +340,10 @@ export default {
   },
   mounted() {
     setInterval(() => {
-      this.showText = this.showText === 1 ? 2 : 1;
+      this.showText = this.showText === 3 ? 1 : this.showText + 1;
+      if (this.showText === 3) {
+        return this.showText === 1;
+      }
       this.gambarIndex = (this.gambarIndex + 1) % this.gambarList.length;
     }, 5000);
   },
