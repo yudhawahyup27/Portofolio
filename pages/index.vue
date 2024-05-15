@@ -14,8 +14,8 @@
         <div
           class="font-bold text-center md:text-left md:text-xl hidden md:block"
         >
-          <h1 class="text-xl text-indigo-500">Hi, Saya</h1>
-          <span class="text-white"> Yudha Wahyu Pratama,</span>
+          <h1 class="text-xl text-indigo-500">Hi, I am</h1>
+          <span class="text-white">Yudha Wahyu Pratama</span>
         </div>
         <div class="d-flex justify-content-between hidden md:block">
           <a href="mailto:wyudha104@gmail.com">
@@ -63,7 +63,7 @@
         :src="gambarList[gambarIndex]"
         alt="Gambar"
         width="300"
-        height="400"
+        height="350"
       />
       <div class="text1 md:mx-10">
         <h1
@@ -238,7 +238,7 @@
 
             <div class="tailwind group flex relative">
               <img
-                class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
+                class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6 white-svg"
                 src="../src/assets/svg/tailwinds.svg"
                 alt="tailwinds"
               />
@@ -312,6 +312,47 @@
         </div>
       </div>
     </div>
+    <!-- Portofolio -->
+    <div class="h-5 border-b-4 border-white text-2xl mb-5">
+      <span class="bg-primary pr-4 text-3xl text-white">Portofolio</span>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div
+        v-for="porto in portfolio"
+        :key="porto.id"
+        class="p-2 rounded-md border-2 border-white bg-white shadow-md"
+      >
+        <div class="flex justify-center items-center">
+          <img class="rounded-md" :src="porto.banner" alt="" />
+        </div>
+        <div class="flex m-2 justify-between">
+          <div>
+            <h2 class="font-bold">{{ porto.name }}</h2>
+          </div>
+          <div class="flex flex-wrap gap-2 curc">
+            <nuxt-link :to="porto.github">
+              <img width="20" src="../src/assets/svg/github.svg" alt="" />
+            </nuxt-link>
+            <nuxt-link :to="porto.preview">
+              <img width="20" src="../src/assets/svg/eye.svg" alt="" />
+            </nuxt-link>
+          </div>
+        </div>
+        <div class="text-sm mx-2">
+          <p>{{ porto.deskripsi }}</p>
+        </div>
+        <!-- Logo -->
+        <div class="mt-2 mx-2 flex gap-2">
+          <img
+            v-for="(tech, index) in porto.tech"
+            :src="tech"
+            :key="index"
+            width="24"
+            alt="Tech Logo"
+          />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -320,8 +361,21 @@ definePageMeta({
   layout: "landing",
 });
 import Slider from "~/components/partial/slider.vue";
+import { usePortfolioStore } from "~/stores/portofolio";
 
 export default {
+  setup() {
+    const portfolioStore = usePortfolioStore();
+
+    // Fetch portfolio data when component is mounted
+    portfolioStore.fetchPortfolio();
+
+    return {
+      portfolio: portfolioStore.portfolio,
+      loading: portfolioStore.loading,
+      error: portfolioStore.error,
+    };
+  },
   data() {
     return {
       mobile: "Mobile",
@@ -335,6 +389,7 @@ export default {
       ],
     };
   },
+
   components: {
     Slider,
   },

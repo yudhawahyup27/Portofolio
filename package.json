@@ -10,20 +10,23 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxt/image": "^1.7.0",
     "@nuxtjs/tailwindcss": "^6.11.4",
     "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
     "@types/node": "^18.19.21",
     "nuxt": "^3.10.3",
-    "nuxt-primevue": "^0.2.2",
+    "nuxt-svgo": "^4.0.0",
     "sass": "^1.75.0",
     "sass-loader": "^14.2.1"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
+    "@pinia/nuxt": "^0.5.1",
     "@tresjs/nuxt": "^2.1.1",
-    "axios": "^1.6.7",
+    "axios": "^1.6.8",
     "defu": "^6.1.4",
     "gsap": "^3.12.5",
+    "pinia": "^2.1.7",
     "three": "^0.161.0",
     "vue3-carousel": "^0.3.1"
   }

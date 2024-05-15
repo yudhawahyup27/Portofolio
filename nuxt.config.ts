@@ -1,26 +1,44 @@
 export default defineNuxtConfig({
+  app: {
+    head: {
+      title: "Portofolio",
+      meta: [{ name: "description", content: "Everything about - Nuxt-3" }],
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/icon?family=Material+Icons",
+        },
+      ],
+    },
+  },
+
   // Enable devtools in development mode
   devtools: { enabled: true },
 
   // Specify CSS files to be included in your project
-  css: ['~/src/assets/styles/main.css'],
+  css: ["~/src/assets/styles/main.css"],
 
-  // Configure modules for Tailwind CSS and PrimeVue
+  // Configure modules for Tailwind CSS
   modules: [
-    '@nuxtjs/tailwindcss',
-    'nuxt-primevue',
+    "@nuxtjs/tailwindcss",
+    "nuxt-svgo",
+    "@nuxt/image",
+    [
+      "@pinia/nuxt",
+      {
+        autoImports: ["defineStore", "acceptHMRUpdate"],
+      },
+    ],
   ],
 
-  // Configuration options for PrimeVue
-  primevue: {
-    usePrimeVue: true,
-    options: {}, // You can specify PrimeVue options here
-    importPT: undefined, // You can import specific PrimeVue components if needed
-    cssLayerOrder: 'tailwind-base, primevue, tailwind-utilities', // Specify the CSS layer order
+  // Svgo
+  svgo: {
+    autoImportPath: "./src/assets/svg",
+    componentPrefix: "i",
   },
 
   // Define any plugins you want to use in your project
   plugins: [],
 
   // Other Nuxt.js configuration options can be added here
-})
+});
