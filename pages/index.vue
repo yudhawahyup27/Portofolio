@@ -24,7 +24,7 @@
             >
               <img
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6 w-6 mx-2"
-                src="~/src/assets/svg/email.svg"
+                src="@/src/assets/svg/email.svg"
                 alt="email"
               />
               <span>Email</span>
@@ -36,7 +36,7 @@
           >
             <img
               class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6 w-6 mx-2"
-              src="../src/assets/svg/download.svg"
+              src="~/src/assets/svg/download.svg"
               alt="download"
             />
             <span>Download CV</span>
