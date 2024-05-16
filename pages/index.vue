@@ -24,7 +24,7 @@
             >
               <img
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6 w-6 mx-2"
-                src="../src/assets/svg/email.svg"
+                src="~/src/assets/svg/email.svg"
                 alt="email"
               />
               <span>Email</span>
@@ -330,9 +330,16 @@
             <h2 class="font-bold">{{ porto.name }}</h2>
           </div>
           <div class="flex flex-wrap gap-2 curc">
-            <nuxt-link :to="porto.github">
+            <nuxt-link v-if="porto.github" :to="porto.github">
               <img width="20" src="../src/assets/svg/github.svg" alt="" />
             </nuxt-link>
+            <img
+              v-else
+              style="display: none"
+              width="20"
+              src="../src/assets/svg/github.svg"
+              alt=""
+            />
             <nuxt-link :to="porto.preview">
               <img width="20" src="../src/assets/svg/eye.svg" alt="" />
             </nuxt-link>
@@ -368,7 +375,7 @@ export default {
     const portfolioStore = usePortfolioStore();
 
     // Fetch portfolio data when component is mounted
-    portfolioStore.fetchPortfolio();
+    portfolioStore.fetchPortfolio("ss");
 
     return {
       portfolio: portfolioStore.portfolio,
