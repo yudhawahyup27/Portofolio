@@ -24,7 +24,7 @@
             >
               <img
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6 w-6 mx-2"
-                src="@/src/assets/svg/email.svg"
+                src="../src/assets/svg/email.svg"
                 alt="email"
               />
               <span>Email</span>
@@ -289,7 +289,7 @@
             <div class="html group flex relative">
               <img
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
-                src="https://iili.io/J41fVoP.png"
+                src="../src/assets/svg/figma.svg"
                 alt="figma"
               />
               <span
@@ -330,11 +330,11 @@
             <h2 class="font-bold">{{ porto.name }}</h2>
           </div>
           <div class="flex flex-wrap gap-2 curc">
-            <nuxt-link :to="porto.github">
+            <nuxt-link v-if="porto.github" :to="porto.github">
               <img width="20" src="../src/assets/svg/github.svg" alt="" />
             </nuxt-link>
             <img
-             
+              v-else
               style="display: none"
               width="20"
               src="../src/assets/svg/github.svg"
