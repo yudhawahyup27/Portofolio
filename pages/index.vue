@@ -289,7 +289,7 @@
             <div class="html group flex relative">
               <img
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
-                src="../src/assets/svg/figma.svg"
+                src="https://iili.io/J41fVoP.png"
                 alt="figma"
               />
               <span
