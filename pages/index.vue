@@ -351,7 +351,7 @@
               width="15"
               height="10"
               class="white-svg"
-              src="../src/assets/svg/github.svg"
+              :src="require('~/assets/svg/github.svg')"
               alt=""
             />
             <span class="md:block hidden text-sm">Code</span>
