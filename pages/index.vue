@@ -5,7 +5,14 @@
       id="hero"
       class="hero grid bg-primary grid-cols-3 flex flex-wrap p-2 shadow shadow-sm place-items-center"
     >
-      <div class="md:mx-10">
+      <div
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        class="md:mx-10"
+      >
         <h1
           class="md:hidden block text-indigo-500 z-10 font-bold text-center md:text-left md:text-xl"
         >
@@ -163,7 +170,9 @@
     <!-- Teknologi -->
     <div>
       <div class="h-5 border-b-4 border-white text-2xl mb-5">
-        <span class="bg-primary pr-4 text-3xl text-white">Teknologi</span>
+        <span data-aos="fade-right" class="bg-primary pr-4 text-3xl text-white"
+          >Teknologi</span
+        >
       </div>
       <span class="mt-4 text-white"
         >I work with the following technologies and tools:</span
@@ -317,46 +326,56 @@
       <span class="bg-primary pr-4 text-3xl text-white">Portofolio</span>
     </div>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div
-        v-for="porto in portfolio"
-        :key="porto.id"
-        class="p-2 rounded-md border-2 border-white bg-white shadow-md"
-      >
+      <div class="p-2 rounded-md border-2 border-white bg-white shadow-md">
         <div class="flex justify-center items-center">
-          <img class="rounded-md" :src="porto.banner" alt="" />
+          <img
+            class="rounded-md hover:scale-75"
+            src="../src/assets/Img/bg.png"
+            alt=""
+          />
         </div>
-        <div class="flex m-2 justify-between">
+        <div class="m-2">
           <div>
-            <h2 class="font-bold">{{ porto.name }}</h2>
-          </div>
-          <div class="flex flex-wrap gap-2 curc">
-            <nuxt-link v-if="porto.github" :to="porto.github">
-              <img width="20" src="../src/assets/svg/github.svg" alt="" />
-            </nuxt-link>
-            <img
-              v-else
-              style="display: none"
-              width="20"
-              src="../src/assets/svg/github.svg"
-              alt=""
-            />
-            <nuxt-link :to="porto.preview">
-              <img width="20" src="../src/assets/svg/eye.svg" alt="" />
-            </nuxt-link>
+            <h2 class="font-bold">Neubeum</h2>
           </div>
         </div>
         <div class="text-sm mx-2">
-          <p>{{ porto.deskripsi }}</p>
+          <p>Web OpenSource untuk component tailwind</p>
         </div>
+        <div class="flex gap-2 m-2">
+          <nuxt-link
+            class="bg-primary p-2 text-white flex gap-2 rounded-md"
+            to=""
+          >
+            <img
+              width="15"
+              height="10"
+              class="white-svg"
+              src="../src/assets/svg/github.svg"
+              alt=""
+            />
+            <span class="md:block hidden text-sm">Code</span>
+          </nuxt-link>
+
+          <nuxt-link
+            class="bg-primary p-2 text-white flex gap-2 rounded-md"
+            to=""
+          >
+            <img
+              width="15"
+              height="10"
+              class="white-svg"
+              src="../src/assets/svg/eye.svg"
+              alt=""
+            />
+            <span class="md:block text-sm hidden">Preview</span>
+          </nuxt-link>
+        </div>
+
+        <span class="mx-2 font-semibold">#Tech</span>
         <!-- Logo -->
         <div class="mt-2 mx-2 flex gap-2">
-          <img
-            v-for="(tech, index) in porto.tech"
-            :src="tech"
-            :key="index"
-            width="24"
-            alt="Tech Logo"
-          />
+          <img src="../src/assets/svg/next-js.svg" width="24" alt="Tech Logo" />
         </div>
       </div>
     </div>
@@ -368,21 +387,8 @@ definePageMeta({
   layout: "landing",
 });
 import Slider from "~/components/partial/slider.vue";
-import { usePortfolioStore } from "~/stores/portofolio";
 
 export default {
-  setup() {
-    const portfolioStore = usePortfolioStore();
-
-    // Fetch portfolio data when component is mounted
-    portfolioStore.fetchPortfolio("ss");
-
-    return {
-      portfolio: portfolioStore.portfolio,
-      loading: portfolioStore.loading,
-      error: portfolioStore.error,
-    };
-  },
   data() {
     return {
       mobile: "Mobile",

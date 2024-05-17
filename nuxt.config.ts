@@ -22,7 +22,9 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/tailwindcss",
     "nuxt-svgo",
+    "nuxt-aos",
     "@nuxt/image",
+    "@hypernym/nuxt-anime",
     [
       "@pinia/nuxt",
       {

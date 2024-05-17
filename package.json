@@ -15,11 +15,13 @@
     "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
     "@types/node": "^18.19.21",
     "nuxt": "^3.10.3",
+    "nuxt-aos": "^1.2.4",
     "nuxt-svgo": "^4.0.0",
     "sass": "^1.75.0",
     "sass-loader": "^14.2.1"
   },
   "dependencies": {
+    "@hypernym/nuxt-anime": "^2.1.1",
     "@nuxtjs/axios": "^5.13.6",
     "@pinia/nuxt": "^0.5.1",
     "@tresjs/nuxt": "^2.1.1",
