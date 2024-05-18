@@ -35,7 +35,7 @@ export default defineNuxtConfig({
 
   // Svgo
   svgo: {
-    autoImportPath: "./src/assets/svg",
+    autoImportPath: "../src/assets/svg/",
     componentPrefix: "i",
   },
 
