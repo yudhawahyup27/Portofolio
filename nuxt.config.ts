@@ -16,7 +16,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   // Specify CSS files to be included in your project
-  css: ["~/src/assets/styles/main.css"],
+  css: ["~/assets/styles/main.css"],
 
   // Configure modules for Tailwind CSS
   modules: [
@@ -31,7 +31,6 @@ export default defineNuxtConfig({
       },
     ],
   ],
-
 
   // Define any plugins you want to use in your project
   plugins: [],
