@@ -29,9 +29,9 @@
             <button
               class="bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-5 rounded inline-flex items-center mt-2 mr-2"
             >
-              <img
+              <NuxtImg
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6 w-6 mx-2"
-                src="../src/assets/svg/email.svg"
+                src="../public/static/svg/email.svg"
                 alt="email"
               />
               <span>Email</span>
@@ -41,9 +41,9 @@
           <button
             class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2"
           >
-            <img
+            <NuxtImg
               class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6 w-6 mx-2"
-              src="../src/assets/svg/download.svg"
+              src="../public/static/svg/download.svg"
               alt="download"
             />
             <span>Download CV</span>
@@ -65,7 +65,7 @@
         </div>
       </div>
 
-      <img
+      <NuxtImg
         class="w-100 object-cover object-center"
         :src="gambarList[gambarIndex]"
         alt="Gambar"
@@ -133,9 +133,9 @@
           <button
             class="bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-5 rounded inline-flex items-center mt-2 mr-2"
           >
-            <img
+            <NuxtImg
               class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6 w-6 mx-2"
-              src="../src/assets/svg/email.svg"
+              src="../public/static/svg/email.svg"
               alt="email"
             />
             <span>Email</span>
@@ -144,9 +144,9 @@
         <button
           class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2"
         >
-          <img
+          <NuxtImg
             class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6 w-6 mx-2"
-            src="../src/assets/svg/download.svg"
+            src="../public/static/svg/download.svg"
             alt="download"
           />
           <span>Download CV</span>
@@ -183,9 +183,9 @@
           <h3 class="text-white font-extrabold text-xl my-3">Mobile</h3>
           <div class="grid grid-cols-4 gap-2 mx-auto justify-center">
             <div class="html group flex relative">
-              <img
+              <NuxtImg
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
-                src="../src/assets/svg/flutter.svg"
+                src="../public/static/svg/flutter.svg"
                 alt="flutter"
               />
               <span
@@ -201,9 +201,9 @@
           <h3 class="text-white font-extrabold text-xl my-3">Frontend Web</h3>
           <div class="grid grid-cols-4 gap-2">
             <div class="html group flex relative">
-              <img
+              <NuxtImg
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
-                src="../src/assets/svg/html.svg"
+                src="../public/static/svg/html.svg"
                 alt="html"
               />
               <span
@@ -212,9 +212,9 @@
               >
             </div>
             <div class="css group flex relative">
-              <img
+              <NuxtImg
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
-                src="../src/assets/svg/css.svg"
+                src="../public/static/svg/css.svg"
                 alt="css"
               />
               <span
@@ -223,9 +223,9 @@
               >
             </div>
             <div class="js group flex relative">
-              <img
+              <NuxtImg
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
-                src="../src/assets/svg/javascript.svg"
+                src="../public/static/svg/javascript.svg"
                 alt="javascript"
               />
               <span
@@ -234,9 +234,9 @@
               >
             </div>
             <div class="bootstrap group flex relative">
-              <img
+              <NuxtImg
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
-                src="../src/assets/svg/bootstrap.svg"
+                src="../public/static/svg/bootstrap.svg"
                 alt="bootstrap"
               />
               <span
@@ -246,9 +246,9 @@
             </div>
 
             <div class="tailwind group flex relative">
-              <img
+              <NuxtImg
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6 white-svg"
-                src="../src/assets/svg/tailwinds.svg"
+                src="../public/static/svg/tailwinds.svg"
                 alt="tailwinds"
               />
               <span
@@ -257,9 +257,9 @@
               >
             </div>
             <div class="nuxt group flex relative">
-              <img
+              <NuxtImg
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
-                src="../src/assets/svg/nuxt.svg"
+                src="../public/static/svg/nuxt.svg"
                 alt="nuxt"
               />
               <span
@@ -268,9 +268,9 @@
               >
             </div>
             <div class="react group flex relative">
-              <img
+              <NuxtImg
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
-                src="../src/assets/svg/react.svg"
+                src="../public/static/svg/react.svg"
                 alt="react"
               />
               <span
@@ -279,9 +279,9 @@
               >
             </div>
             <div class="vue group flex relative">
-              <img
+              <NuxtImg
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
-                src="../src/assets/svg/vue.svg"
+                src="../public/static/svg/vue.svg"
                 alt="vue"
               />
               <span
@@ -296,9 +296,9 @@
           <h3 class="text-white font-extrabold text-xl my-3">Other</h3>
           <div class="grid grid-cols-4">
             <div class="html group flex relative">
-              <img
+              <NuxtImg
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
-                src="../src/assets/svg/figma.svg"
+                src="../public/static/svg/figma.svg"
                 alt="figma"
               />
               <span
@@ -307,9 +307,9 @@
               >
             </div>
             <div class="css group flex relative">
-              <img
+              <NuxtImg
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
-                src="../src/assets/svg/cypress.svg"
+                src="../public/static/svg/cypress.svg"
                 alt="cypress"
               />
               <span
@@ -328,9 +328,9 @@
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
       <div class="p-2 rounded-md border-2 border-white bg-white shadow-md">
         <div class="flex justify-center items-center">
-          <img
+          <NuxtImg
             class="rounded-md hover:scale-75"
-            src="../src/assets/Img/bg.png"
+            src="../public/static/svg/bg.png"
             alt=""
           />
         </div>
@@ -347,7 +347,7 @@
             class="bg-primary p-2 text-white flex gap-2 rounded-md"
             to=""
           >
-            <img
+            <NuxtImg
               width="15"
               height="10"
               class="white-svg"
@@ -361,11 +361,11 @@
             class="bg-primary p-2 text-white flex gap-2 rounded-md"
             to=""
           >
-            <img
+            <NuxtImg
               width="15"
               height="10"
               class="white-svg"
-              src="../src/assets/svg/eye.svg"
+              src="../public/static/svg/eye.svg"
               alt=""
             />
             <span class="md:block text-sm hidden">Preview</span>
@@ -375,7 +375,11 @@
         <span class="mx-2 font-semibold">#Tech</span>
         <!-- Logo -->
         <div class="mt-2 mx-2 flex gap-2">
-          <img src="../src/assets/svg/next-js.svg" width="24" alt="Tech Logo" />
+          <NuxtImg
+            src="../public/static/svg/next-js.svg"
+            width="24"
+            alt="Tech Logo"
+          />
         </div>
       </div>
     </div>

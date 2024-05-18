@@ -21,7 +21,6 @@ export default defineNuxtConfig({
   // Configure modules for Tailwind CSS
   modules: [
     "@nuxtjs/tailwindcss",
-    "nuxt-svgo",
     "nuxt-aos",
     "@nuxt/image",
     "@hypernym/nuxt-anime",
@@ -32,12 +31,7 @@ export default defineNuxtConfig({
       },
     ],
   ],
-  
-  // Svgo
-  svgo: {
-    autoImportPath: "../src/assets/svg/",
-    componentPrefix: "i",
-  },
+
 
   // Define any plugins you want to use in your project
   plugins: [],
