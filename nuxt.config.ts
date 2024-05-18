@@ -32,7 +32,7 @@ export default defineNuxtConfig({
       },
     ],
   ],
-
+  
   // Svgo
   svgo: {
     autoImportPath: "../src/assets/svg/",
