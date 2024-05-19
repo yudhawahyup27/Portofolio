@@ -3,7 +3,7 @@
     <!-- Hero Slide -->
     <div
       id="hero"
-      class="hero grid bg-primary grid-cols-3 flex flex-wrap p-2 shadow shadow-sm place-items-center"
+      class="hero grid bg-primary grid-cols-3 flex-wrap p-2 shadow-sm place-items-center"
     >
       <div
         data-aos="fade-right"
@@ -14,6 +14,11 @@
         class="md:mx-10"
       >
         <h1
+          data-aos="flip-right"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
           class="md:hidden block text-indigo-500 z-10 font-bold text-center md:text-left md:text-xl"
         >
           Mobile <span class="text-white">Developer</span>
@@ -54,15 +59,21 @@
           class="social-media md:flex flex-wrap my-4 gap-2 cursor-pointer hidden"
         >
           <nuxt-link to="https://www.linkedin.com/in/yudha-wahyu-pratama/">
-            <span
-              class="opacity-0 bg-black text-white text-center text-xs rounded py-1 px-2 absolute bottom-full left-1/2 transform -translate-x-1/2 group-hover:opacity-100 group-hover:translate-y-2 transition-opacity duration-300"
-            >
-              LinkedIn Profile
-            </span>
+            <img src="/assets/svg/linkedin.svg" alt="" srcset="" />
           </nuxt-link>
-          <nuxt-link to="https://www.instagram.com/nairobi.js/"> </nuxt-link>
-          <nuxt-link to="https://github.com/yudhawahyup27/"> </nuxt-link>
-          <nuxt-link to="https://mastama.my.id"> </nuxt-link>
+          <nuxt-link to="https://www.instagram.com/nairobi.js/">
+            <img src="/assets/svg/instagram.svg" alt="" srcset="" />
+          </nuxt-link>
+          <nuxt-link to="https://github.com/yudhawahyup27/">
+            <div
+              class="text-center flex justify-center bg-white p-1 w-8 h-8 rounded-full"
+            >
+              <img src="/assets/svg/github.svg" alt="" srcset="" />
+            </div>
+          </nuxt-link>
+          <nuxt-link to="https://mastama.my.id">
+            <img src="/assets/svg/web.svg" class="white-svg" alt="" srcset="" />
+          </nuxt-link>
         </div>
       </div>
 
@@ -82,11 +93,24 @@
         <div
           class="hidden md:flex md:flex-wrap text-indigo-500 z-10 font-bold md:text-left md:text-xl my-4"
         >
-          <span v-if="showText === 1" class="mx-2 text-2xl">{{ mobile }} </span>
-          <span v-else-if="showText === 2" class="mx-2 text-2xl">{{
-            web
-          }}</span>
-          <span v-else class="mx-2 text-2xl">{{ qa }}</span>
+          <span
+            v-if="showText === 1"
+            class="mx-2 transition ease-in delay-150 text-2xl"
+            data-aos="flip-up"
+            >{{ mobile }}
+          </span>
+          <span
+            v-else-if="showText === 2"
+            class="mx-2 transition ease-in delay-150 text-2xl"
+            data-aos="flip-up"
+            >{{ web }}</span
+          >
+          <span
+            data-aos="flip-up"
+            v-else
+            class="mx-2 text-2xl transition ease-in delay-150"
+            >{{ qa }}</span
+          >
           <small
             v-if="showText === 1 || showText === 2"
             class="text-white md:block text-2xl animate-none"
@@ -154,29 +178,32 @@
           <span>Download CV</span>
         </button>
       </div>
-
       <div
         class="social-media flex flex-wrap my-4 gap-2 cursor-pointer md:hidden"
       >
         <nuxt-link to="https://www.linkedin.com/in/yudha-wahyu-pratama/">
-          <span
-            class="opacity-0 bg-black text-white text-center text-xs rounded py-1 px-2 absolute bottom-full left-1/2 transform -translate-x-1/2 group-hover:opacity-100 group-hover:translate-y-2 transition-opacity duration-300"
-          >
-            LinkedIn Profile
-          </span>
+          <img src="/assets/svg/linkedin.svg" alt="" srcset="" />
         </nuxt-link>
-        <nuxt-link to="https://www.instagram.com/nairobi.js/"></nuxt-link>
-        <nuxt-link to="https://github.com/yudhawahyup27/"></nuxt-link>
-        <nuxt-link to="https://mastama.my.id"></nuxt-link>
+        <nuxt-link to="https://www.instagram.com/nairobi.js/">
+          <img src="/assets/svg/instagram.svg" alt="" srcset="" />
+        </nuxt-link>
+        <nuxt-link to="https://github.com/yudhawahyup27/">
+          <div
+            class="text-center flex justify-center bg-white p-1 w-8 h-8 rounded-full"
+          >
+            <img src="/assets/svg/github.svg" alt="" srcset="" />
+          </div>
+        </nuxt-link>
+        <nuxt-link to="https://mastama.my.id">
+          <img src="/assets/svg/web.svg" class="white-svg" alt="" srcset="" />
+        </nuxt-link>
       </div>
     </div>
 
     <!-- Teknologi -->
     <div>
       <div class="h-5 border-b-4 border-white text-2xl mb-5">
-        <span data-aos="fade-right" class="bg-primary pr-4 text-3xl text-white"
-          >Teknologi</span
-        >
+        <span class="bg-primary pr-4 text-3xl text-white">Teknologi</span>
       </div>
       <span class="mt-4 text-white"
         >I work with the following technologies and tools:</span
@@ -260,7 +287,7 @@
             </div>
             <div class="nuxt group flex relative">
               <img
-                class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
+                class="white-svg transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
                 src="assets/svg/nuxt.svg"
                 alt="nuxt"
               />
@@ -297,7 +324,14 @@
         <div>
           <h3 class="text-white font-extrabold text-xl my-3">Other</h3>
           <div class="grid grid-cols-4">
-            <div class="html group flex relative">
+            <div
+              data-aos="zoom-in"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              class="html group flex relative"
+            >
               <img
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
                 src="assets/svg/figma.svg"
@@ -308,7 +342,14 @@
                 >Figma</span
               >
             </div>
-            <div class="css group flex relative">
+            <div
+              data-aos="zoom-in"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              class="css group flex relative"
+            >
               <img
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
                 src="assets/svg/cypress.svg"
@@ -328,9 +369,14 @@
     <div class="h-5 border-b-4 border-white text-2xl mb-5">
       <span class="bg-primary pr-4 text-3xl text-white">Portofolio</span>
     </div>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-2">
       <div
-        class="p-2 rounded-md text-white bg-primary border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer"
+        data-aos="flip-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        class="p-2 rounded-md text-white border-white bg-primary border shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer"
       >
         <div class="flex p-2 justify-center items-center bg-white rounded-lg">
           <img
@@ -394,7 +440,13 @@
           />
         </div>
       </div>
+      <!--  -->
       <div
+        data-aos="flip-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
         class="p-2 rounded-md text-white border-white bg-primary border shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer"
       >
         <div class="flex p-2 justify-center items-center bg-white rounded-lg">
@@ -447,7 +499,149 @@
         <div class="mt-2 mx-2 flex gap-2">
           <img
             class="white-svg"
-            src="assets/svg/next-js.svg"
+            src="assets/svg/nuxt.svg"
+            width="24"
+            alt="Tech Logo"
+          />
+          <img
+            class="white-svg"
+            src="assets/svg/tailwinds.svg"
+            width="24"
+            alt="Tech Logo"
+          />
+        </div>
+      </div>
+      <!--  -->
+      <div
+        data-aos="flip-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        class="p-2 rounded-md text-white border-white bg-primary border shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer"
+      >
+        <div class="flex p-2 justify-center items-center bg-white rounded-lg">
+          <img
+            class="rounded-lg hover:scale-75 hover:transition-all hover:duration-200 hover:ease-in-out h-40"
+            src="assets/Img/porto-img.png"
+            alt=""
+          />
+        </div>
+        <div class="m-2">
+          <div>
+            <h2 class="font-bold">Masjid Center</h2>
+          </div>
+        </div>
+        <div class="text-sm mx-2 truncate">
+          <p class="truncate">I made my portfolio web with nuxt, tailwinds</p>
+        </div>
+        <div class="flex gap-2 m-2">
+          <nuxt-link
+            class="border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer bg-primary p-2 font-semibold text-white flex gap-2 rounded-md"
+            to="https://github.com/yudhawahyup27/portofolio"
+          >
+            <img
+              width="15"
+              height="10"
+              class="white-svg"
+              src="assets/svg/github.svg"
+              alt=""
+            />
+            <span class="md:block hidden text-sm">Code</span>
+          </nuxt-link>
+
+          <nuxt-link
+            to="https://ywp.my.id"
+            class="bg-primary border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer p-2 text-white font-semibold flex gap-2 rounded-md"
+          >
+            <img
+              width="15"
+              height="10"
+              class="white-svg"
+              src="assets/svg/eye.svg"
+              alt=""
+            />
+            <span class="md:block text-sm hidden">Preview</span>
+          </nuxt-link>
+        </div>
+
+        <span class="mx-2 font-semibold">#Tech</span>
+        <!-- Logo -->
+        <div class="mt-2 mx-2 flex gap-2">
+          <img
+            class="white-svg"
+            src="assets/svg/nuxt.svg"
+            width="24"
+            alt="Tech Logo"
+          />
+          <img
+            class="white-svg"
+            src="assets/svg/tailwinds.svg"
+            width="24"
+            alt="Tech Logo"
+          />
+        </div>
+      </div>
+      <!--  -->
+      <div
+        data-aos="flip-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        class="p-2 rounded-md text-white border-white bg-primary border shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer"
+      >
+        <div class="flex p-2 justify-center items-center bg-white rounded-lg">
+          <img
+            class="rounded-lg hover:scale-75 hover:transition-all hover:duration-200 hover:ease-in-out h-40"
+            src="assets/Img/porto-img.png"
+            alt=""
+          />
+        </div>
+        <div class="m-2">
+          <div>
+            <h2 class="font-bold">Vendor Management System (VMS WIKA)</h2>
+          </div>
+        </div>
+        <div class="text-sm mx-2 truncate">
+          <p class="truncate">I made my portfolio web with nuxt, tailwinds</p>
+        </div>
+        <div class="flex gap-2 m-2">
+          <nuxt-link
+            class="border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer bg-primary p-2 font-semibold text-white flex gap-2 rounded-md"
+            to="https://github.com/yudhawahyup27/portofolio"
+          >
+            <img
+              width="15"
+              height="10"
+              class="white-svg"
+              src="assets/svg/github.svg"
+              alt=""
+            />
+            <span class="md:block hidden text-sm">Code</span>
+          </nuxt-link>
+
+          <nuxt-link
+            to="https://ywp.my.id"
+            class="bg-primary border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer p-2 text-white font-semibold flex gap-2 rounded-md"
+          >
+            <img
+              width="15"
+              height="10"
+              class="white-svg"
+              src="assets/svg/eye.svg"
+              alt=""
+            />
+            <span class="md:block text-sm hidden">Preview</span>
+          </nuxt-link>
+        </div>
+
+        <span class="mx-2 font-semibold">#Tech</span>
+        <!-- Logo -->
+        <div class="mt-2 mx-2 flex gap-2">
+          <img
+            class="white-svg"
+            src="assets/svg/nuxt.svg"
             width="24"
             alt="Tech Logo"
           />
