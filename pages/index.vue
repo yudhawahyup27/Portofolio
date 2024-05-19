@@ -341,8 +341,8 @@
             <h2 class="font-bold">Neubeum</h2>
           </div>
         </div>
-        <div class="text-sm mx-2">
-          <p>Web OpenSource untuk component tailwind</p>
+        <div class="text-sm mx-2 truncate">
+          <p class="truncate">Web OpenSource for developer tailwind free</p>
         </div>
         <div class="flex gap-2 m-2">
           <nuxt-link
