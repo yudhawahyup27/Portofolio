@@ -131,7 +131,7 @@
       <div class="d-flex justify-content-between md:hidden block">
         <a href="mailto:wyudha104@gmail.com">
           <button
-            class="bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-5 rounded inline-flex items-center mt-2 mr-2"
+            class="text-white bg-primary border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] font-bold py-2 px-5 rounded inline-flex items-center mt-2 mr-2"
           >
             <img
               class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6 w-6 mx-2"
@@ -142,7 +142,7 @@
           </button>
         </a>
         <button
-          class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2"
+          class="text-white bg-primary border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] font-bold py-2 px-4 rounded inline-flex items-center mt-2"
         >
           <img
             class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6 w-6 mx-2"
@@ -394,10 +394,8 @@
       <div
         class="p-2 rounded-md text-white border-white bg-primary border shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer"
       >
-        <div class="flex justify-center items-center bg-white p-2 rounded-lg">
+        <div class="flex p-2 justify-center items-center bg-white rounded-lg">
           <img
-            width="100%"
-            height="600"
             class="rounded-lg hover:scale-75 hover:transition-all hover:duration-200 hover:ease-in-out h-40"
             src="assets/Img/porto-img.png"
             alt=""
