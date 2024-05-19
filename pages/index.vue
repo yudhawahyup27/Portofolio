@@ -27,7 +27,7 @@
         <div class="d-flex justify-content-between hidden md:block">
           <a href="mailto:wyudha104@gmail.com">
             <button
-              class="bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-5 rounded inline-flex items-center mt-2 mr-2"
+              class="text-white bg-primary border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer font-bold py-2 px-5 rounded inline-flex items-center mt-2 mr-2"
             >
               <img
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6 w-6 mx-2"
@@ -39,7 +39,7 @@
           </a>
           <a href="~/publi"></a>
           <button
-            class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-2"
+            class="text-white bg-primary border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer font-bold py-2 px-4 rounded inline-flex items-center mt-2"
           >
             <img
               class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6 w-6 mx-2"
@@ -327,11 +327,11 @@
     </div>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
       <div
-        class="p-2 rounded-md border text-white border-white bg-primary shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)]"
+        class="p-2 rounded-md text-white bg-primary border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer"
       >
-        <div class="flex justify-center items-center">
+        <div class="flex p-2 justify-center items-center bg-white rounded-lg">
           <img
-            class="rounded-lg hover:scale-75"
+            class="rounded-lg hover:scale-75 hover:transition-all hover:duration-200 hover:ease-in-out h-40"
             src="assets/Img/bg.png"
             alt=""
           />
@@ -346,13 +346,13 @@
         </div>
         <div class="flex gap-2 m-2">
           <nuxt-link
-            class="bg-white p-2 text-primary flex gap-2 rounded-md"
+            class="border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer bg-primary p-2 font-semibold text-white flex gap-2 rounded-md"
             to="https://github.com/yudhawahyup27/neubeam"
           >
             <img
               width="15"
               height="10"
-              class=""
+              class="white-svg"
               src="assets/svg/github.svg"
               alt=""
             />
@@ -361,12 +361,79 @@
 
           <nuxt-link
             to="https://neubeam.vercel.app"
-            class="bg-white p-2 text-primary flex gap-2 rounded-md"
+            class="bg-primary border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer p-2 text-white font-semibold flex gap-2 rounded-md"
           >
             <img
               width="15"
               height="10"
-              class=""
+              class="white-svg"
+              src="assets/svg/eye.svg"
+              alt=""
+            />
+            <span class="md:block text-sm hidden">Preview</span>
+          </nuxt-link>
+        </div>
+
+        <span class="mx-2 font-semibold">#Tech</span>
+        <!-- Logo -->
+        <div class="mt-2 mx-2 flex gap-2">
+          <img
+            class="white-svg"
+            src="assets/svg/next-js.svg"
+            width="24"
+            alt="Tech Logo"
+          />
+          <img
+            class="white-svg"
+            src="assets/svg/tailwinds.svg"
+            width="24"
+            alt="Tech Logo"
+          />
+        </div>
+      </div>
+      <div
+        class="p-2 rounded-md text-white border-white bg-primary border shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer"
+      >
+        <div class="flex justify-center items-center bg-white p-2 rounded-lg">
+          <img
+            width="100%"
+            height="600"
+            class="rounded-lg hover:scale-75 hover:transition-all hover:duration-200 hover:ease-in-out h-40"
+            src="assets/Img/porto-img.png"
+            alt=""
+          />
+        </div>
+        <div class="m-2">
+          <div>
+            <h2 class="font-bold">Portofolio</h2>
+          </div>
+        </div>
+        <div class="text-sm mx-2 truncate">
+          <p class="truncate">I made my portfolio web with nuxt, tailwinds</p>
+        </div>
+        <div class="flex gap-2 m-2">
+          <nuxt-link
+            class="border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer bg-primary p-2 font-semibold text-white flex gap-2 rounded-md"
+            to="https://github.com/yudhawahyup27/portofolio"
+          >
+            <img
+              width="15"
+              height="10"
+              class="white-svg"
+              src="assets/svg/github.svg"
+              alt=""
+            />
+            <span class="md:block hidden text-sm">Code</span>
+          </nuxt-link>
+
+          <nuxt-link
+            to="https://ywp.my.id"
+            class="bg-primary border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer p-2 text-white font-semibold flex gap-2 rounded-md"
+          >
+            <img
+              width="15"
+              height="10"
+              class="white-svg"
               src="assets/svg/eye.svg"
               alt=""
             />
