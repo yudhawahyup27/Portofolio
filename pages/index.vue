@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-primary h-full p-4">
+  <div class="bg-primary p-4">
     <!-- Hero Slide -->
     <div
       id="hero"
@@ -37,17 +37,18 @@
               <span>Email</span>
             </button>
           </a>
-          <a href="~/publi"></a>
-          <button
-            class="text-white bg-primary border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer font-bold py-2 px-4 rounded inline-flex items-center mt-2"
-          >
-            <img
-              class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6 w-6 mx-2"
-              src="assets/svg/download.svg"
-              alt="download"
-            />
-            <span>Download CV</span>
-          </button>
+          <a href="~/publi">
+            <button
+              class="text-white bg-primary border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer font-bold py-2 px-4 rounded inline-flex items-center mt-2"
+            >
+              <img
+                class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6 w-6 mx-2"
+                src="assets/svg/download.svg"
+                alt="download"
+              />
+              <span>Download CV</span>
+            </button>
+          </a>
         </div>
         <div
           class="social-media md:flex flex-wrap my-4 gap-2 cursor-pointer hidden"
@@ -100,14 +101,14 @@
           </small>
         </div>
         <p class="text-xs text-justify text-white hidden md:block indent-8">
-          My name is Yudha. I successfully graduated as Diploma of Informatic
-          Management, State Polytechnic of Malang. A skilled Fullstack developer
-          with 2+ years in website and android app development using PHP,
-          Javascript and Kotlin. I am always willing to learn new technologies
-          in full stack development, to provide innovative and efficient
-          software development solutions. I am committed to continuously
-          improving my skills and knowledge, to provide the best results in
-          software development.
+          My name is Yudha. I successfully graduated with a Diploma in
+          Informatics Management from the State Polytechnic of Malang. I am a
+          skilled Fullstack developer with 2+ years of experience in website and
+          Android app development using PHP, JavaScript, and Kotlin. I am always
+          eager to learn new technologies in full stack development, to provide
+          innovative and efficient software development solutions. I am
+          committed to continuously improving my skills and knowledge, to
+          provide the best results in software development.
         </p>
       </div>
     </div>
@@ -128,6 +129,7 @@
           software development.
         </p>
       </div>
+
       <div class="d-flex justify-content-between md:hidden block">
         <a href="mailto:wyudha104@gmail.com">
           <button
@@ -152,6 +154,7 @@
           <span>Download CV</span>
         </button>
       </div>
+
       <div
         class="social-media flex flex-wrap my-4 gap-2 cursor-pointer md:hidden"
       >
@@ -162,11 +165,12 @@
             LinkedIn Profile
           </span>
         </nuxt-link>
-        <nuxt-link to="https://www.instagram.com/nairobi.js/"> </nuxt-link>
-        <nuxt-link to="https://github.com/yudhawahyup27/"> </nuxt-link>
-        <nuxt-link to="https://mastama.my.id"> </nuxt-link>
+        <nuxt-link to="https://www.instagram.com/nairobi.js/"></nuxt-link>
+        <nuxt-link to="https://github.com/yudhawahyup27/"></nuxt-link>
+        <nuxt-link to="https://mastama.my.id"></nuxt-link>
       </div>
     </div>
+
     <!-- Teknologi -->
     <div>
       <div class="h-5 border-b-4 border-white text-2xl mb-5">
@@ -193,7 +197,6 @@
                 >Flutter</span
               >
             </div>
-            \
           </div>
         </div>
         <!-- Front end -->
@@ -230,7 +233,7 @@
               />
               <span
                 class="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto"
-                >Javascript</span
+                >JavaScript</span
               >
             </div>
             <div class="bootstrap group flex relative">
@@ -241,10 +244,9 @@
               />
               <span
                 class="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto"
-                >Bootstraps</span
+                >Bootstrap</span
               >
             </div>
-
             <div class="tailwind group flex relative">
               <img
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6 white-svg"
@@ -253,7 +255,7 @@
               />
               <span
                 class="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto"
-                >Tailwinds</span
+                >Tailwind</span
               >
             </div>
             <div class="nuxt group flex relative">
@@ -321,6 +323,7 @@
         </div>
       </div>
     </div>
+
     <!-- Portofolio -->
     <div class="h-5 border-b-4 border-white text-2xl mb-5">
       <span class="bg-primary pr-4 text-3xl text-white">Portofolio</span>
