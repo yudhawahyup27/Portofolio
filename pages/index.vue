@@ -326,10 +326,12 @@
       <span class="bg-primary pr-4 text-3xl text-white">Portofolio</span>
     </div>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div class="p-2 rounded-md border-2 border-white bg-white shadow-md">
+      <div
+        class="p-2 rounded-md border text-white border-white bg-primary shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)]"
+      >
         <div class="flex justify-center items-center">
           <img
-            class="rounded-md hover:scale-75"
+            class="rounded-lg hover:scale-75"
             src="assets/Img/bg.png"
             alt=""
           />
@@ -344,13 +346,13 @@
         </div>
         <div class="flex gap-2 m-2">
           <nuxt-link
-            class="bg-primary p-2 text-white flex gap-2 rounded-md"
-            to=""
+            class="bg-white p-2 text-primary flex gap-2 rounded-md"
+            to="https://github.com/yudhawahyup27/neubeam"
           >
             <img
               width="15"
               height="10"
-              class="white-svg"
+              class=""
               src="assets/svg/github.svg"
               alt=""
             />
@@ -358,13 +360,13 @@
           </nuxt-link>
 
           <nuxt-link
-            class="bg-primary p-2 text-white flex gap-2 rounded-md"
-            to=""
+            to="https://neubeam.vercel.app"
+            class="bg-white p-2 text-primary flex gap-2 rounded-md"
           >
             <img
               width="15"
               height="10"
-              class="white-svg"
+              class=""
               src="assets/svg/eye.svg"
               alt=""
             />
@@ -375,7 +377,18 @@
         <span class="mx-2 font-semibold">#Tech</span>
         <!-- Logo -->
         <div class="mt-2 mx-2 flex gap-2">
-          <img src="assets/svg/next-js.svg" width="24" alt="Tech Logo" />
+          <img
+            class="white-svg"
+            src="assets/svg/next-js.svg"
+            width="24"
+            alt="Tech Logo"
+          />
+          <img
+            class="white-svg"
+            src="assets/svg/tailwinds.svg"
+            width="24"
+            alt="Tech Logo"
+          />
         </div>
       </div>
     </div>
