@@ -66,11 +66,11 @@
       </div>
 
       <img
-        class="w-100 object-cover object-center"
+        class="h-56"
         :src="gambarList[gambarIndex]"
         alt="Gambar"
         width="300"
-        height="350"
+        height="300"
       />
       <div class="text1 md:mx-10">
         <h1
@@ -216,7 +216,7 @@
               />
               <span
                 class="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto"
-                >Flutter</span
+                >Kotlin</span
               >
             </div>
           </div>
@@ -734,7 +734,7 @@ export default {
       showText: 1,
       gambarIndex: 0,
       gambarList: [
-        "https://iili.io/J41fVoP.png",
+        "https://i.ibb.co.com/4FYgxPw/foto.png",
         "https://iili.io/J41KHQ9.png",
       ],
     };
