@@ -5,20 +5,8 @@
       id="hero"
       class="hero grid bg-primary grid-cols-3 flex-wrap p-2 shadow-sm place-items-center"
     >
-      <div
-        data-aos="fade-right"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        class="md:mx-10"
-      >
+      <div>
         <h1
-          data-aos="flip-right"
-          data-aos-offset="200"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out"
           class="md:hidden block text-indigo-500 z-10 font-bold text-center md:text-left md:text-xl"
         >
           Mobile <span class="text-white">Developer</span>
@@ -96,7 +84,7 @@
           <span
             v-if="showText === 1"
             class="mx-2 transition ease-in delay-150 text-2xl"
-            data-aos="flip-up"
+            data-aos="zoom-in"
             >{{ mobile }}
           </span>
           <span
@@ -106,7 +94,7 @@
             >{{ web }}</span
           >
           <span
-            data-aos="flip-up"
+            data-aos="flip-right"
             v-else
             class="mx-2 text-2xl transition ease-in delay-150"
             >{{ qa }}</span
@@ -213,11 +201,18 @@
         <div>
           <h3 class="text-white font-extrabold text-xl my-3">Mobile</h3>
           <div class="grid grid-cols-4 gap-2 mx-auto justify-center">
-            <div class="html group flex relative">
+            <div
+              class="html group flex relative"
+              data-aos="zoom-in"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <img
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
-                src="assets/svg/flutter.svg"
-                alt="flutter"
+                src="assets/svg/kotlin.svg"
+                alt="kotlin"
               />
               <span
                 class="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto"
@@ -230,7 +225,14 @@
         <div>
           <h3 class="text-white font-extrabold text-xl my-3">Frontend Web</h3>
           <div class="grid grid-cols-4 gap-2">
-            <div class="html group flex relative">
+            <div
+              class="html group flex relative"
+              data-aos="zoom-in"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <img
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
                 src="assets/svg/html.svg"
@@ -241,7 +243,14 @@
                 >HTML</span
               >
             </div>
-            <div class="css group flex relative">
+            <div
+              class="css group flex relative"
+              data-aos="zoom-in"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <img
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
                 src="assets/svg/css.svg"
@@ -252,7 +261,14 @@
                 >CSS</span
               >
             </div>
-            <div class="js group flex relative">
+            <div
+              class="js group flex relative"
+              data-aos="zoom-in"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <img
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
                 src="assets/svg/javascript.svg"
@@ -263,7 +279,14 @@
                 >JavaScript</span
               >
             </div>
-            <div class="bootstrap group flex relative">
+            <div
+              class="bootstrap group flex relative"
+              data-aos="zoom-in"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <img
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
                 src="assets/svg/bootstrap.svg"
@@ -274,7 +297,14 @@
                 >Bootstrap</span
               >
             </div>
-            <div class="tailwind group flex relative">
+            <div
+              class="tailwind group flex relative"
+              data-aos="zoom-in"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <img
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6 white-svg"
                 src="assets/svg/tailwinds.svg"
@@ -285,7 +315,14 @@
                 >Tailwind</span
               >
             </div>
-            <div class="nuxt group flex relative">
+            <div
+              class="nuxt group flex relative"
+              data-aos="zoom-in"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <img
                 class="white-svg transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
                 src="assets/svg/nuxt.svg"
@@ -296,7 +333,14 @@
                 >Nuxt</span
               >
             </div>
-            <div class="react group flex relative">
+            <div
+              class="react group flex relative"
+              data-aos="zoom-in"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <img
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
                 src="assets/svg/react.svg"
@@ -307,7 +351,14 @@
                 >React</span
               >
             </div>
-            <div class="vue group flex relative">
+            <div
+              class="vue group flex relative"
+              data-aos="zoom-in"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               <img
                 class="transform hover:scale-110 hover:rotate-10 hover:skew-y-6"
                 src="assets/svg/vue.svg"
@@ -369,6 +420,13 @@
     <div class="h-5 border-b-4 border-white text-2xl mb-5">
       <span class="bg-primary pr-4 text-3xl text-white">Portofolio</span>
     </div>
+
+    <div class="flex text-2xl font-bold my-3">
+      <span class="text-indigo-500"><</span>
+      <span class="text-white">Web </span>
+      <span class="text-indigo-500">/></span>
+    </div>
+
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-2">
       <div
         data-aos="flip-right"
@@ -523,7 +581,7 @@
         <div class="flex p-2 justify-center items-center bg-white rounded-lg">
           <img
             class="rounded-lg hover:scale-75 hover:transition-all hover:duration-200 hover:ease-in-out h-40"
-            src="assets/Img/porto-img.png"
+            src="assets/Img/masjid.png"
             alt=""
           />
         </div>
@@ -533,12 +591,14 @@
           </div>
         </div>
         <div class="text-sm mx-2 truncate">
-          <p class="truncate">I made my portfolio web with nuxt, tailwinds</p>
+          <p class="truncate">
+            Masjid Center web islamic For free alquran,hadish
+          </p>
         </div>
         <div class="flex gap-2 m-2">
           <nuxt-link
             class="border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer bg-primary p-2 font-semibold text-white flex gap-2 rounded-md"
-            to="https://github.com/yudhawahyup27/portofolio"
+            to="https://github.com/yudhawahyup27/Islam"
           >
             <img
               width="15"
@@ -551,7 +611,7 @@
           </nuxt-link>
 
           <nuxt-link
-            to="https://ywp.my.id"
+            to="https://islam-jade.vercel.app/"
             class="bg-primary border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer p-2 text-white font-semibold flex gap-2 rounded-md"
           >
             <img
@@ -568,6 +628,7 @@
         <span class="mx-2 font-semibold">#Tech</span>
         <!-- Logo -->
         <div class="mt-2 mx-2 flex gap-2">
+          <img class="" src="assets/svg/pinia.svg" width="24" alt="Tech Logo" />
           <img
             class="white-svg"
             src="assets/svg/nuxt.svg"
@@ -594,7 +655,7 @@
         <div class="flex p-2 justify-center items-center bg-white rounded-lg">
           <img
             class="rounded-lg hover:scale-75 hover:transition-all hover:duration-200 hover:ease-in-out h-40"
-            src="assets/Img/porto-img.png"
+            src="assets/Img/Image_not_available.png"
             alt=""
           />
         </div>
@@ -608,21 +669,7 @@
         </div>
         <div class="flex gap-2 m-2">
           <nuxt-link
-            class="border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer bg-primary p-2 font-semibold text-white flex gap-2 rounded-md"
-            to="https://github.com/yudhawahyup27/portofolio"
-          >
-            <img
-              width="15"
-              height="10"
-              class="white-svg"
-              src="assets/svg/github.svg"
-              alt=""
-            />
-            <span class="md:block hidden text-sm">Code</span>
-          </nuxt-link>
-
-          <nuxt-link
-            to="https://ywp.my.id"
+            to="https://vms.wika.co.id/landing"
             class="bg-primary border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer p-2 text-white font-semibold flex gap-2 rounded-md"
           >
             <img
@@ -641,18 +688,33 @@
         <div class="mt-2 mx-2 flex gap-2">
           <img
             class="white-svg"
-            src="assets/svg/nuxt.svg"
+            src="assets/svg/laravel.svg"
             width="24"
             alt="Tech Logo"
           />
+
           <img
-            class="white-svg"
-            src="assets/svg/tailwinds.svg"
+            class=""
+            src="assets/svg/bootstrap.svg"
             width="24"
             alt="Tech Logo"
           />
         </div>
       </div>
+    </div>
+
+    <div class="flex text-2xl font-bold my-3 gap-1">
+      <span class="text-indigo-500">{</span>
+      <span class="text-white">"type:" </span>
+      <span class="text-white">"API" </span>
+      <span class="text-indigo-500">}</span>
+    </div>
+
+    <div class="flex text-2xl font-bold my-3 gap-1">
+      <span class="text-white">setContentView</span>
+      <span class="text-indigo-500">( </span>
+      <span class="text-white">Android </span>
+      <span class="text-indigo-500">)</span>
     </div>
   </div>
 </template>
