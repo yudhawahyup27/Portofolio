@@ -1,21 +1,49 @@
 <template>
   <div>
-    <landing-header />
+    <LandingHeader />
     <main>
       <Nuxt />
     </main>
     <slot />
+    <div v-if="showHideSpinner" class="full-page-overlay">
+      <PartialLoading />
+    </div>
   </div>
 </template>
 
 <script>
 import LandingHeader from "~/components/landing/Header.vue";
+import PartialLoading from "~/components/partial/loading.vue"; // Assuming you have this component
+
 export default {
-  name: "LayoutLanding",
   components: {
     LandingHeader,
+    PartialLoading,
+  },
+  data() {
+    return {
+      showHideSpinner: true,
+    };
+  },
+  beforeCreate() {
+    this.showHideSpinner = true;
+  },
+  mounted() {
+    this.showHideSpinner = false;
   },
 };
 </script>
-
-<style></style>
+<style scoped>
+.full-page-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+</style>

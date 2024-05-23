@@ -710,6 +710,65 @@
       <span class="text-indigo-500">}</span>
     </div>
 
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-2">
+      <div
+        data-aos="flip-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        class="p-2 rounded-md text-white border-white bg-primary border shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer"
+      >
+        <div class="flex p-2 justify-center items-center bg-white rounded-lg">
+          <img
+            class="rounded-lg hover:scale-75 hover:transition-all hover:duration-200 hover:ease-in-out h-40"
+            src="assets/Img/komplainIt.png"
+            alt=""
+          />
+        </div>
+        <div class="m-2">
+          <div>
+            <h2 class="font-bold">Komplain It API</h2>
+          </div>
+        </div>
+        <div class="text-sm mx-2 truncate">
+          <p class="truncate">Api Komplaint IT</p>
+        </div>
+        <div class="flex gap-2 m-2">
+          <nuxt-link
+            class="border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer bg-primary p-2 font-semibold text-white flex gap-2 rounded-md"
+            to="https://github.com/yudhawahyup27/api-komplain"
+          >
+            <img
+              width="15"
+              height="10"
+              class="white-svg"
+              src="assets/svg/github.svg"
+              alt=""
+            />
+            <span class="md:block hidden text-sm">Code</span>
+          </nuxt-link>
+        </div>
+
+        <span class="mx-2 font-semibold">#Tech</span>
+        <!-- Logo -->
+        <div class="mt-2 mx-2 flex gap-2">
+          <img
+            class="white-svg"
+            src="assets/svg/laravel.svg"
+            width="24"
+            alt="Tech Logo"
+          />
+          <img
+            class="white-svg"
+            src="assets/svg/tailwinds.svg"
+            width="24"
+            alt="Tech Logo"
+          />
+        </div>
+      </div>
+    </div>
+
     <div class="flex text-2xl font-bold my-3 gap-1">
       <span class="text-white">setContentView</span>
       <span class="text-indigo-500">( </span>
