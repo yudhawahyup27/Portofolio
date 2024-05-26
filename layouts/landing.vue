@@ -8,10 +8,12 @@
     <div v-if="showHideSpinner" class="full-page-overlay">
       <PartialLoading />
     </div>
+    <LandingFooter />
   </div>
 </template>
 
 <script>
+import LandingFooter from "~/components/landing/Footer.vue";
 import LandingHeader from "~/components/landing/Header.vue";
 import PartialLoading from "~/components/partial/loading.vue"; // Assuming you have this component
 
@@ -19,6 +21,7 @@ export default {
   components: {
     LandingHeader,
     PartialLoading,
+    LandingFooter,
   },
   data() {
     return {
