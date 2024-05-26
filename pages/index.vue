@@ -129,9 +129,11 @@
         </p>
       </div>
     </div>
-    <div id="aboutme" class="md:hidden block">
+    <div class="md:hidden block">
       <div class="h-5 border-b-4 border-white text-2xl mb-5 md:hidden block">
-        <span class="bg-primary pr-4 text-3xl text-white">About Me</span>
+        <span id="aboutme" class="bg-primary pr-4 text-3xl text-white"
+          >About Me</span
+        >
       </div>
 
       <div class="text1 md:mx-10">
