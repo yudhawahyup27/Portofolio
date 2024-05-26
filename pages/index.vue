@@ -812,7 +812,7 @@
         <div class="flex gap-2 m-2">
           <nuxt-link
             class="border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer bg-primary p-2 font-semibold text-white flex gap-2 rounded-md"
-            to="https://github.com/yudhawahyup27/api-komplain"
+            to="https://github.com/yudhawahyup27/KomplaintIt"
           >
             <img
               width="15"
