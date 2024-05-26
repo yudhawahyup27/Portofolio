@@ -5,7 +5,7 @@
         class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg bg-[#0f172a] text-white"
       >
         <div>
-          <a href="#"> Portofolio </a>
+          <a href="#hero"> Portofolio </a>
         </div>
 
         <svg
@@ -35,24 +35,24 @@
           <ul
             class="pt-4 text-base text-white md:flex md:justify-between md:pt-0"
           >
-            <li>
+            <!-- <li>
               <a
                 
                 class="md:p-4 py-2 block hover:text-purple-400"
                 href="#"
                 >Language</a
               >
-            </li>
+            </li> -->
             <li>
-              <a class="md:p-4 py-2 block hover:text-purple-400" href="#"
+              <a class="md:p-4 py-2 block hover:text-purple-400" href="#porto"
                 >Project</a
               >
             </li>
-            <li>
-              <a class="md:p-4 py-2 block hover:text-purple-400" href="#"
+            <!-- <li class="md:hidden block">
+              <a class="md:p-4 py-2 block hover:text-purple-400" href="#contact"
                 >Contact</a
               >
-            </li>
+            </li> -->
             <li>
               <a
                 class="md:p-4 py-2 block hover:text-purple-400"
@@ -62,8 +62,15 @@
             </li>
             <li>
               <a
-                class="md:p-4 py-2 block hover:text-purple-400 text-purple-500"
-                href="#"
+                class="md:p-4 py-2 block hover:text-purple-400 text-white"
+                href="#tekno"
+                >Teknologi</a
+              >
+            </li>
+            <li>
+              <a
+                class="md:p-4 py-2 block hover:text-white text-purple-500"
+                href="#aboutme"
                 >About Me</a
               >
             </li>
@@ -76,22 +83,18 @@
   </div>
 </template>
 
-<script lang="ts">
-
+<script>
 export default {
   data() {
     return {
       isMenuHidden: true,
     };
   },
-  components: {
-   
-  },
+  components: {},
   methods: {
     toggleMenu() {
       this.isMenuHidden = !this.isMenuHidden;
     },
-  
   },
 };
 </script>

@@ -30,7 +30,9 @@
               <span>Email</span>
             </button>
           </a>
-          <a href="~/publi">
+          <a
+            href="https://drive.google.com/file/d/1g0aEPWnDDBKNcpCPwB2N7qzN2tZkG6bn/view?usp=sharing"
+          >
             <button
               class="text-white bg-primary border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer font-bold py-2 px-4 rounded inline-flex items-center mt-2"
             >
@@ -112,7 +114,10 @@
             Atomatic
           </small>
         </div>
-        <p class="text-xs text-justify text-white hidden md:block indent-8">
+        <p
+          id="aboutme"
+          class="text-xs text-justify text-white hidden md:block indent-8"
+        >
           My name is Yudha. I successfully graduated with a Diploma in
           Informatics Management from the State Polytechnic of Malang. I am a
           skilled Fullstack developer with 2+ years of experience in website and
@@ -124,7 +129,7 @@
         </p>
       </div>
     </div>
-    <div class="md:hidden block">
+    <div id="aboutme" class="md:hidden block">
       <div class="h-5 border-b-4 border-white text-2xl mb-5 md:hidden block">
         <span class="bg-primary pr-4 text-3xl text-white">About Me</span>
       </div>
@@ -155,7 +160,8 @@
             <span>Email</span>
           </button>
         </a>
-        <button
+        <nuxt-link
+          to="https://drive.google.com/file/d/1g0aEPWnDDBKNcpCPwB2N7qzN2tZkG6bn/view?usp=sharing"
           class="text-white bg-primary border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] font-bold py-2 px-4 rounded inline-flex items-center mt-2"
         >
           <img
@@ -164,7 +170,7 @@
             alt="download"
           />
           <span>Download CV</span>
-        </button>
+        </nuxt-link>
       </div>
       <div
         class="social-media flex flex-wrap my-4 gap-2 cursor-pointer md:hidden"
@@ -189,7 +195,7 @@
     </div>
 
     <!-- Teknologi -->
-    <div>
+    <div id="tekno">
       <div class="h-5 border-b-4 border-white text-2xl mb-5">
         <span class="bg-primary pr-4 text-3xl text-white">Teknologi</span>
       </div>
@@ -417,7 +423,7 @@
     </div>
 
     <!-- Portofolio -->
-    <div class="h-5 border-b-4 border-white text-2xl mb-5">
+    <div id="porto" class="h-5 border-b-4 border-white text-2xl mb-5">
       <span class="bg-primary pr-4 text-3xl text-white">Portofolio</span>
     </div>
 
