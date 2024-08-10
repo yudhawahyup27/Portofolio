@@ -341,7 +341,7 @@
                 >Nuxt</span
               >
             </div>
-            <div
+            <!-- <div
               class="react group flex relative"
               data-aos="zoom-in"
               data-aos-offset="200"
@@ -358,7 +358,7 @@
                 class="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto"
                 >React</span
               >
-            </div>
+            </div> -->
             <div
               class="vue group flex relative"
               data-aos="zoom-in"
@@ -689,6 +689,128 @@
             />
             <span class="md:block text-sm hidden">Preview</span>
           </nuxt-link>
+        </div>
+
+        <span class="mx-2 font-semibold">#Tech</span>
+        <!-- Logo -->
+        <div class="mt-2 mx-2 flex gap-2">
+          <img
+            class="white-svg"
+            src="assets/svg/laravel.svg"
+            width="24"
+            alt="Tech Logo"
+          />
+
+          <img
+            class=""
+            src="assets/svg/bootstrap.svg"
+            width="24"
+            alt="Tech Logo"
+          />
+        </div>
+      </div>
+      <!--  -->
+      <div
+        data-aos="flip-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        class="p-2 rounded-md text-white border-white bg-primary border shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer"
+      >
+        <div class="flex p-2 justify-center items-center bg-white rounded-lg">
+          <img
+            class="rounded-lg hover:scale-75 hover:transition-all hover:duration-200 hover:ease-in-out h-40"
+            src="assets/Img/demanganFarm.png"
+            alt=""
+          />
+        </div>
+        <div class="m-2">
+          <div>
+            <h2 class="font-bold">Demangan Farm</h2>
+          </div>
+        </div>
+        <div class="text-sm mx-2 truncate">
+          <p class="truncate">I made my portfolio web with Laravel and Firebase</p>
+        </div>
+        <div class="flex gap-2 m-2">
+          <nuxt-link
+          class="border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer bg-primary p-2 font-semibold text-white flex gap-2 rounded-md"
+          to="https://github.com/yudhawahyup27/monitorfarm"
+        >
+          <img
+            width="15"
+            height="10"
+            class="white-svg"
+            src="assets/svg/github.svg"
+            alt=""
+          />
+          <span class="md:block hidden text-sm">Code</span>
+        </nuxt-link>
+        </div>
+
+        <span class="mx-2 font-semibold">#Tech</span>
+        <!-- Logo -->
+        <div class="mt-2 mx-2 flex gap-2">
+          <img
+            class="white-svg"
+            src="assets/svg/laravel.svg"
+            width="24"
+            alt="Tech Logo"
+          />
+          <img
+            class="white-svg"
+            src="assets/svg/firebase-.svg"
+            width="24"
+            alt="Tech Logo"
+          />
+
+          <img
+            class=""
+            src="assets/svg/bootstrap.svg"
+            width="24"
+            alt="Tech Logo"
+          />
+        </div>
+      </div>
+      <!--  -->
+      <div
+        data-aos="flip-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        class="p-2 rounded-md text-white border-white bg-primary border shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer"
+      >
+        <div class="flex p-2 justify-center items-center bg-white rounded-lg">
+          <img
+            class="rounded-lg hover:scale-75 hover:transition-all hover:duration-200 hover:ease-in-out h-40"
+            src="assets/Img/penjualanbibit.jpg"
+            alt=""
+          />
+        </div>
+        <div class="m-2">
+          <div>
+            <h2 class="font-bold">Market Place Penjualan Bibit</h2>
+          </div>
+        </div>
+        <div class="text-sm mx-2 truncate">
+          <p class="truncate">I made my portfolio web with Laravel and Mysql</p>
+        </div>
+        <div class="flex gap-2 m-2">
+          <nuxt-link
+          class="border border-white shadow-[4px_4px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_rgba(255,255,255,1)] cursor-default hover:transition-all hover:duration-200 hover:ease-in-out hover:-left-0 hover:-top-0 lg:cursor-pointer bg-primary p-2 font-semibold text-white flex gap-2 rounded-md"
+          to="https://github.com/yudhawahyup27/PenjualanBibit"
+        >
+          <img
+            width="15"
+            height="10"
+            class="white-svg"
+            src="assets/svg/github.svg"
+            alt=""
+          />
+          <span class="md:block hidden text-sm">Code</span>
+        </nuxt-link>
         </div>
 
         <span class="mx-2 font-semibold">#Tech</span>
